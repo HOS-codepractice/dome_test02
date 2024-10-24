@@ -1,6 +1,10 @@
 /* おまじない */
 @charset "UTF-8";
 
+html{
+  font-size: 16px;
+}
+
 /* notosans適用*/
 body {
   font-family: 'Noto Sans', sans-serif;
@@ -21,7 +25,8 @@ header img{
 
 
 /* containerで幅一括指定 */
-#mainvisual,.container{
+/* #mainvisualに設定したら別に.containerいらない */
+#mainvisual{
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -65,6 +70,7 @@ li {
 #detail {
   max-width: 60%;
   text-align: left;
+  margin:0 auto;
 }
 
 #detail h2{
@@ -106,6 +112,19 @@ dl {
 
 }
 
+/* detail内のコンテンツのflexを解除し縦積み
+flexboxの操作についてはflex-flowを使用 
+flex-flow: <flex-direction※縦> <flex-wrap※文字の折り返し>;*/
+
+@media screen and (max-width:1024px){
+ .detail1{
+    flex-flow: column;
+  }
+
+    /* 　　文字列は表示範囲の100%とし自動で改行させる */
+ 
+}
+
 /* 文字の横幅をflex-basisで記載された範囲いっぱいに指定することで
   　ddタグとの空白範囲を整える */
 dt {
@@ -129,7 +148,7 @@ dd {
 
 footer {
   max-width: 600px;
-  margin: 60px auto 20px auto;
+  margin: 70px auto 20px auto;
 }
 
 small {
