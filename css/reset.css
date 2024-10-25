@@ -227,6 +227,7 @@ iframe {
   vertical-align: bottom;
 }
 
+/* 画像の最大サイズは親要素の100% */
 img{
   max-width: 100%;
 }
