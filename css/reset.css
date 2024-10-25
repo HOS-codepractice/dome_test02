@@ -227,6 +227,10 @@ iframe {
   vertical-align: bottom;
 }
 
+img{
+  max-width: 100%;
+}
+
 /* Forms */
 /* ============================================ */
 
