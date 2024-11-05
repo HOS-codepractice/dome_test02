@@ -24,12 +24,12 @@ header img{
 
 
 /* containerで幅一括指定 */
-/* #mainvisualに設定したら別に.containerいらない */
+/* #mainvisualに設定したら別に.containerいらない
 .container{
   /* width: 1000px; */
-  max-width: 1000px;
-  margin: 0 auto;
-}
+  /* max-width: 1000px;
+  margin: 0 auto; */
+/* } */ 
 
 /* index部分だけ背景白 */
 #index {
